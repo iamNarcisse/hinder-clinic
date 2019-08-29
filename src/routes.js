@@ -17,7 +17,8 @@ import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
-import CalendarPage from "views/Calender/index";
+import CalendarPage from "./views/Calender/Calender";
+import TableListPage from "./views/Calender/TableList";
 import CalenderIndex from "views/Calender/index.js";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
 
@@ -34,14 +35,14 @@ const dashboardRoutes = [
     component: CalendarPage,
     layout: "/admin"
   },
-  // {
-  //   path: "/dashboard",
-  //   name: "Dashboard",
-  //   rtlName: "لوحة القيادة",
-  //   icon: Dashboard,
-  //   component: DashboardPage,
-  //   layout: "/admin"
-  // },
+  {
+    path: "/calendar-day",
+    name: "Dashboard",
+    rtlName: "لوحة القيادة",
+    icon: Dashboard,
+    component: TableListPage,
+    layout: "/day"
+  },
   {
     path: "/user",
     name: "User Profile",
@@ -57,7 +58,7 @@ const dashboardRoutes = [
     icon: "content_paste",
     component: TableIndex,
     layout: "/admin"
-  },
+  }
   // {
   //   path: "/typography",
   //   name: "Typography",

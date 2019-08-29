@@ -32,6 +32,16 @@ const switchRoutes = (
           />
         );
       }
+
+      if (prop.layout === "/day") {
+        return (
+          <Route
+            path={"/admin" + prop.path}
+            component={prop.component}
+            key={key}
+          />
+        );
+      }
     })}
   </Switch>
 );

@@ -16,7 +16,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/admin" component={Admin} />
       <Route path="/rtl" component={RTL} />
-      <Redirect from="/" to="/admin/calender" />
+      {/* <Redirect from="/" to="/admin/calender" /> */}
     </Switch>
   </Router>,
   document.getElementById("root")
